@@ -15,7 +15,9 @@ public class FilterLearn {
 
         listOfName.stream().filter(name -> !name.equals("raju")).forEach(name -> System.out.println(name));
 
-        listOfName.stream().filter(name -> listOfName.size()>2).forEach(name -> System.out.println(name));
+        //lamda function replaced with reference code
+        listOfName.stream().filter(name -> listOfName.size()>2).forEach(System.out::println);
+
 
 
     }
